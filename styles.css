@@ -1,5 +1,80 @@
-body{
-    box-sizing: border-box;
-    margin: 0;
+:root {
+    --main-blue: #03658f;
+    --second-blue: #011c4f;
+    --highlight: #0b91cb;
+    --main-gray: #1c282e;
+}
+
+*{
     padding: 0;
+    margin: 0;
+}
+
+body {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+
+nav {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--main-blue);
+}
+
+h1, a, .project-title{
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    margin-right: 1rem;
+}
+
+.nav-items {
+    height: 100%;
+    display: list-item;
+}
+
+.nav-items a{
+    display: block;
+    padding: 1.5rem;
+}
+
+.nav-items:hover {
+    background-color: #0b91cb;
+}
+
+.gallery{
+    display: grid;
+}
+
+.title, .gallery{
+    max-width: 800px;
+    margin: auto;
+}
+
+.title, .gallery, #about, #projects, #contact{
+    width: 100%;
+}
+
+#welcome{
+    height: 100vh;
+    background-color: var(--main-gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#projects{
+    background-color: var(--main-blue);
 }
