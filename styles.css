@@ -56,6 +56,8 @@ a {
 
 .gallery{
     display: grid;
+    gap: 4rem;
+    grid-template-columns: auto auto;
 }
 
 .title, .gallery{
@@ -65,6 +67,32 @@ a {
 
 .title, .gallery, #about, #projects, #contact{
     width: 100%;
+}
+
+.title, .projects-title{
+    font-size: 28px;
+}
+
+.project{
+    background-color: var(--second-blue);
+}
+
+.project-title{
+    padding: 1rem;
+}
+
+.project-title, .projects-title{
+    text-align: center;
+}
+
+.projects-title{
+    padding: 2rem;
+}
+
+.project-img{
+    width: 100%;
+    height: calc(100% - 4rem);
+    object-fit: cover;
 }
 
 #welcome{
