@@ -18,7 +18,7 @@ body {
     background-color: var(--main-gray);
 }
 
-nav {
+.navbar {
     width: 100vw;
     position: fixed;
     top: 0;
@@ -28,7 +28,11 @@ nav {
     background: var(--main-blue);
 }
 
-h1, h2, a, p, .project-title {
+.hide{
+    display: none;
+}
+
+h1, h2, a, p, i, .project-title {
     color: white;
 }
 
@@ -36,36 +40,32 @@ a {
     text-decoration: none;
 }
 
-.nav-list {
-    display: flex;
-    list-style-type: none;
-    margin-right: 1rem;
-}
-
 .nav-items {
-    height: 100%;
-    display: list-item;
-}
-
-.nav-items a {
-    display: block;
     padding: 1rem 1.5rem;
 }
 
-.nav-items a::before, .nav-items a::after {
+.nav-items:nth-of-type(4) {
+    padding-right: 4rem;
+}
+
+.nav-items::before, .nav-items::after {
     color: var(--second-gray);
 }
 
-.nav-items a::before {
+.nav-items::before {
     content: '< ';
 }
 
-.nav-items a::after {
+.nav-items::after {
     content: ' />';
 }
 
 .nav-items:hover {
     background-color: var(--highlight);
+}
+
+.text-center{
+    text-align: center;
 }
 
 .inline {
@@ -106,6 +106,10 @@ a {
     font-size: 28px;
 }
 
+.projects-title {
+    padding: 2rem;
+}
+
 .project{
     background-color: var(--second-blue);
 }
@@ -124,25 +128,23 @@ p, .project-title {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.project-title, .projects-title {
-    text-align: center;
-}
-
-.projects-title {
-    padding: 2rem;
-}
-
 .project-img {
     height: calc(100% - 4rem);
     object-fit: cover;
 }
 
-#welcome {
+.full-height{
     height: 100vh;
-    background: url(Images/Techy_Background.png);
-    background-size: 100%;
+}
+
+#welcome, #contact{
     justify-content: center;
     flex-direction: column;
+}
+
+#welcome {
+    background: url(Images/Techy_Background.png);
+    background-size: 100%;
 }
 
 #projects, #contact {
@@ -151,4 +153,44 @@ p, .project-title {
 
 #about {
     background-color: var(--main-gray);
+}
+
+@media screen and (max-width: 600px){
+
+    .navbar a {
+        display: none;
+    }
+
+    .hide, .navbar a.icon, .navbar.responsive a {
+        display: block;
+    }
+
+    .nav-items:first-child {
+        padding-bottom: 2rem;
+    }
+
+    .nav-items:first-child::before, .nav-items:first-child::after {
+        content: none;
+    }
+
+    .nav-items:nth-of-type(4) {
+        padding-right: 1.5rem;
+    }
+
+    .navbar a.icon {
+        position: fixed;
+        top: 0;
+        right: 0;
+        padding: 1rem;
+        width: 5%;
+    }
+
+    .navbar.responsive {
+        flex-direction: column;
+    }
+
+    .navbar.responsive a{
+        display: block;
+        text-align: right;
+    }
 }
