@@ -3,9 +3,10 @@
     --second-blue: #011232;
     --highlight: #00425f;
     --main-gray: #1b1d1e;
+    --second-gray: #8aa1ad;
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
 }
@@ -13,7 +14,8 @@
 body {
     box-sizing: border-box;
     overflow-x: hidden;
-    font-family: Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--main-gray);
 }
 
 nav {
@@ -26,7 +28,7 @@ nav {
     background: var(--main-blue);
 }
 
-h1, a, p, .project-title{
+h1, h2, a, p, .project-title {
     color: white;
 }
 
@@ -45,32 +47,62 @@ a {
     display: list-item;
 }
 
-.nav-items a{
+.nav-items a {
     display: block;
-    padding: 1.5rem;
+    padding: 1rem 1.5rem;
+}
+
+.nav-items a::before, .nav-items a::after {
+    color: var(--second-gray);
+}
+
+.nav-items a::before {
+    content: '< ';
+}
+
+.nav-items a::after {
+    content: ' />';
 }
 
 .nav-items:hover {
     background-color: var(--highlight);
 }
 
-.gallery{
-    display: grid;
-    padding-bottom: 2rem;
-    gap: 4rem;
-    grid-template-columns: auto auto;
+.inline {
+    display: inline-block;
 }
 
-.title, .gallery, .contacts{
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+.projects-gallery, .contact-grid {
+    padding-bottom: 2rem;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.projects-gallery {
+    gap: 4rem;
+}
+
+.contact-grid {
+    gap: 0rem;
+}
+
+.center-width {
     max-width: 1000px;
     margin: auto;
 }
 
-.title, .gallery, .project-img, .contacts, #welcome, #projects, #about, #contact{
+.full-width, #welcome, #projects, #about, #contact {
     width: 100%;
 }
 
-.title, .projects-title{
+.title, .projects-title {
     font-size: 28px;
 }
 
@@ -78,42 +110,45 @@ a {
     background-color: var(--second-blue);
 }
 
-p, .project-title, .contacts a{
+p, .project-title {
     padding: 1rem;
 }
 
-.project-title, .projects-title{
+.contacts a {
+    padding: 0.5rem 1rem;
+}
+
+.contacts p {
+    padding: 0;
+    padding-left: 0.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.project-title, .projects-title {
     text-align: center;
 }
 
-.projects-title{
+.projects-title {
     padding: 2rem;
 }
 
-.project-img{
+.project-img {
     height: calc(100% - 4rem);
     object-fit: cover;
 }
 
-.contacts, #welcome{
-    display: flex;
+#welcome {
+    height: 100vh;
+    background: url(Images/Techy_Background.png);
+    background-size: 100%;
+    justify-content: center;
     flex-direction: column;
 }
 
-#welcome{
-    height: 100vh;
-    background-color: var(--main-gray);
-    justify-content: center;
-}
-
-#projects{
+#projects, #contact {
     background-color: var(--main-blue);
 }
 
-#about{
+#about {
     background-color: var(--main-gray);
-}
-
-#contact{
-    background-color: var(--main-blue);
 }
