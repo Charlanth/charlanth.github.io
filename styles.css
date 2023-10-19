@@ -1,8 +1,8 @@
 :root {
-    --main-blue: #03658f;
-    --second-blue: #011c4f;
-    --highlight: #0b91cb;
-    --main-gray: #1c282e;
+    --main-blue: #01364c;
+    --second-blue: #011232;
+    --highlight: #00425f;
+    --main-gray: #1b1d1e;
 }
 
 *{
@@ -13,7 +13,7 @@
 body {
     box-sizing: border-box;
     overflow-x: hidden;
-    font-family: sans-serif;
+    font-family: Helvetica, sans-serif;
 }
 
 nav {
@@ -23,10 +23,10 @@ nav {
     left: 0;
     display: flex;
     justify-content: flex-end;
-    background-color: var(--main-blue);
+    background: var(--main-blue);
 }
 
-h1, a, .project-title{
+h1, a, p, .project-title{
     color: white;
 }
 
@@ -51,21 +51,22 @@ a {
 }
 
 .nav-items:hover {
-    background-color: #0b91cb;
+    background-color: var(--highlight);
 }
 
 .gallery{
     display: grid;
+    padding-bottom: 2rem;
     gap: 4rem;
     grid-template-columns: auto auto;
 }
 
-.title, .gallery{
-    max-width: 800px;
+.title, .gallery, .contacts{
+    max-width: 1000px;
     margin: auto;
 }
 
-.title, .gallery, #about, #projects, #contact{
+.title, .gallery, .project-img, .contacts, #welcome, #projects, #about, #contact{
     width: 100%;
 }
 
@@ -77,7 +78,7 @@ a {
     background-color: var(--second-blue);
 }
 
-.project-title{
+p, .project-title, .contacts a{
     padding: 1rem;
 }
 
@@ -90,19 +91,29 @@ a {
 }
 
 .project-img{
-    width: 100%;
     height: calc(100% - 4rem);
     object-fit: cover;
+}
+
+.contacts, #welcome{
+    display: flex;
+    flex-direction: column;
 }
 
 #welcome{
     height: 100vh;
     background-color: var(--main-gray);
-    display: flex;
-    flex-direction: column;
     justify-content: center;
 }
 
 #projects{
+    background-color: var(--main-blue);
+}
+
+#about{
+    background-color: var(--main-gray);
+}
+
+#contact{
     background-color: var(--main-blue);
 }
