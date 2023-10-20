@@ -13,17 +13,16 @@
     </head>
     <body>
         <nav id="navbar" class="navbar">
-            <div class="hide nav-items"> </div>
+            <div class="pc-hide nav-items"> </div>
             <a class="nav-items" href="#welcome">Welcome</a>
             <a class="nav-items" href="#projects">Projects</a>
             <a class="nav-items" href="#about">About</a>
             <a class="nav-items"href="#contact">Contact</a>
-            <a href="javascript:void(0);" class="icon hide" onclick="displayMenu()"><i class="fa fa-bars"></i></a>
+            <a href="javascript:void(0);" class="icon pc-hide" onclick="displayMenu()"><i class="fa fa-bars"></i></a>
         </nav>
         <section id="welcome" class="flex full-height">
-            <div class="main-title center-width full-width">
-                <h1>Hi, my name is Charles-Émile Lanthier</h1>
-                <!--To Do-->
+            <div class="center-width full-width">
+                <h1 class="main-title">Hi, my name is Charles-Émile Lanthier</h1>
             </div>
         </section>
         <section id="projects" class="section-padding">
@@ -38,9 +37,14 @@
                     </a>
                 </div>
                 <div class="project">
-                    <a href="">
-                        <img class="project-img full-width" src="Images/Invest_In_Pura_Vida_Logo.png" alt="Invest in Pura Vida Logo">
+                    <a href="javascript:void(0);" onclick="displayDescription('project-description-2', 'project-2')">
+                        <div id="project-2">
+                            <img class="project-img full-width" src="Images/Invest_In_Pura_Vida_Logo.png" alt="Invest in Pura Vida Logo">
+                        </div>
                         <h2 class="project-title text-center">Invest in Pura Vida Logo</h2>
+                        <div id="project-description-2" class="hidden">
+                            <p class="project-description">Placeholder</p>
+                        </div>
                     </a>
                 </div>
             </div>
@@ -57,17 +61,19 @@
                 <h3>Montfort Renaissance, Ottawa</h3>
                 <p>IT Apprentice, summer 2023</p>
                 <p>Fixing, configuring, and building computers with Windows 10/11. Perform IT inventory, Installing cables, make the end caps of cables, and manage a security system with fobs.</p>
+                <h3>Mouvement d'Implication Francophone d'Orléans (MIFO), Ottawa</h3>
+                <p>Apparitor, September 2022 to September 2023</p>
+                <p>Launch Zoom meetings for activities offered in hybrid mode, install cameras including adjusting angles, perform audio tests, help clients with connection to Zoom meetings and some other minor technical and audiovisual tasks.</p>
                 <h3>Montfort Renaissance, Ottawa</h3>
                 <p>IT Apprentice, summer 2022</p>
                 <p>Fixing and configuring computers with Windows, perform IT inventory, Installing cables and make the end caps of cables.</p>
                 <h2>Education</h2>
-                <p><span class="date">2018 - 2022</span> Garneau Catholic Highschool, Focus in computer programming</p>
-                <p><span class="date">2022 - 2023</span> University of Ottawa, one year</p>
+                <p><span class="date">2022 - 2023</span> University of Ottawa, Software Engineering.</p>
                 <h2>Skills</h2>
-                <p>HTML/CSS, Python, Pixel Art, Computer assembly and configuration</p>
+                <p>HTML/CSS, Python, Pixel Art, Unity, C#, Computer assembly and configuration.</p>
             </div>
         </section>
-        <footer id="contact" class="full-height flex">
+        <footer id="contact" class="flex section-padding-top">
             <div class="center-width full-width">
                 <h1 class="title">Contact</h1>
             </div>
@@ -82,7 +88,7 @@
                     <a href="https://www.instagram.com/charlesemilelanthier/" target="_blank"><i class="fa fa-instagram"></i><p class="inline">charlesemilelanthier</p></a>
                 </div>
             </div>
-            <p class="center-width">Made with code by Charles-Émile</p>
+            <p class="center-width full-width">Made with code by Charles-Émile</p>
         </footer>
     </body>
 </html>

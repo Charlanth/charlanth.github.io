@@ -1,8 +1,9 @@
 :root {
     --main-blue: #01364c;
     --second-blue: #011232;
-    --highlight: #00425f;
+    --highlight-blue: #00425f;
     --main-gray: #1b1d1e;
+    --highlight-gray: #363a3c;
     --second-gray: #8aa1ad;
 }
 
@@ -29,7 +30,7 @@ body {
     background: var(--main-blue);
 }
 
-.hide{
+.hidden, .pc-hide{
     display: none;
 }
 
@@ -64,11 +65,15 @@ h2, h3 {
 }
 
 .nav-items:hover {
-    background-color: var(--highlight);
+    background-color: var(--highlight-blue);
 }
 
 .section-padding {
     padding: 4rem 0;
+}
+
+.section-padding-top {
+    padding-top: 4rem;
 }
 
 .text-center{ 
@@ -111,9 +116,14 @@ h2, h3 {
 
 .title {
     padding-bottom: 2rem;
+    font-size: 28px;
 }
 
-.title, .main-title {
+.main-title {
+    font-size: 36px;
+}
+
+.main-subtitle {
     font-size: 28px;
 }
 
@@ -123,6 +133,7 @@ h2, h3 {
 
 .project{
     background-color: var(--second-blue);
+    min-height: 380px;
 }
 
 .project-title {
@@ -145,7 +156,11 @@ h2, h3 {
     object-fit: cover;
 }
 
-.full-height{
+.project-description {
+    padding: 0 1rem;
+}
+
+.full-height {
     height: 100vh;
 }
 
@@ -173,7 +188,7 @@ h2, h3 {
         display: none;
     }
 
-    .hide, .navbar a.icon, .navbar.responsive a {
+    .pc-hide, .navbar a.icon, .navbar.responsive a {
         display: block;
     }
 
