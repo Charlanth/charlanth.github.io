@@ -64,7 +64,7 @@ h2, h3 {
     content: ' />';
 }
 
-.nav-items:hover {
+.nav-items:hover, .icon:hover {
     background-color: var(--highlight-blue);
 }
 
@@ -102,6 +102,7 @@ h2, h3 {
 }
 
 .contact-grid {
+    padding: 3rem 0;
     gap: 0;
 }
 
@@ -164,6 +165,10 @@ h2, h3 {
     height: 100vh;
 }
 
+.credit {
+    padding-top: 6rem;
+}
+
 #welcome, #contact{
     flex-direction: column;
 }
@@ -193,7 +198,7 @@ h2, h3 {
     }
 
     .nav-items:first-child {
-        padding-bottom: 2rem;
+        padding-bottom: 2.2rem;
     }
 
     .nav-items:first-child::before, .nav-items:first-child::after {
