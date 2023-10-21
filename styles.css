@@ -224,7 +224,7 @@ h2, h3 {
 
 @media screen and (max-width: 600px){
 
-    .navbar a, .mobile-hide{
+    .navbar a:not(.language-option), .mobile-hide{
         display: none;
     }
 
@@ -232,11 +232,11 @@ h2, h3 {
         display: block;
     }
 
-    .nav-items:first-child {
+    .no-decorations {
         padding-bottom: 2.2rem;
     }
 
-    .nav-items:first-child::before, .nav-items:first-child::after {
+    .no-decorations::before, .no-decorations::after {
         content: none;
     }
 
