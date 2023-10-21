@@ -47,6 +47,41 @@ h2, h3 {
     font-weight: bold;
 }
 
+.language-dropdown {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.language-button {
+    padding: 14px;
+    background-color: var(--main-blue);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.language-button:hover {
+    background-color: var(--highlight-blue);
+}
+
+.language-options {
+    position: absolute;
+    background: var(--main-blue);
+    list-style: none;
+}
+  
+.language-option {
+    padding: 14px;
+    display: block;
+    color: white;
+    transition: background 0.2s;
+}
+  
+.language-option:hover {
+    background: var(--highlight-blue);
+}
+
 .nav-items {
     padding: 1rem 1.5rem;
 }

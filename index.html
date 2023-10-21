@@ -13,57 +13,66 @@
     </head>
     <body>
         <nav id="navbar" class="navbar">
+            <div class="language-dropdown">
+                <button class="language-button" onclick="showLanguageOptions()">
+                    <span id="current-language" class="current-language">EN</span>
+                </button>
+                <ul id="language-options" class="language-options hidden">
+                    <li ><a href="javascript:void(0);" class="language-option" onclick="changeLanguage('FR')">FR</a></li>
+                    <li ><a href="javascript:void(0);" class="language-option" onclick="changeLanguage('EN')">EN</a></li>
+                </ul>
+            </div>
             <div class="pc-hide nav-items"> </div>
-            <a class="nav-items" href="#welcome">Welcome</a>
-            <a class="nav-items" href="#projects">Projects</a>
-            <a class="nav-items" href="#about">About</a>
-            <a class="nav-items"href="#contact">Contact</a>
+            <a class="nav-items" href="#welcome" data-translation="welcome">Welcome</a>
+            <a class="nav-items" href="#projects" data-translation="projects">Projects</a>
+            <a class="nav-items" href="#about" data-translation="about">About</a>
+            <a class="nav-items"href="#contact" data-translation="contact">Contact</a>
             <a href="javascript:void(0);" class="icon pc-hide" onclick="displayMenu()"><i class="fa fa-bars"></i></a>
         </nav>
         <section id="welcome" class="flex full-height">
             <div class="center-width full-width">
-                <h1 class="main-title">Hi, my name is Charles-Émile Lanthier</h1>
+                <h1 class="main-title" data-translation="main-title">Hi, my name is Charles-Émile Lanthier</h1>
             </div>
         </section>
         <section id="projects" class="section-padding">
             <div class="center-width">
-                <h1 class="title">Here are some of my projects</h1>
+                <h1 class="title" data-translation="projects-title">Here are some of my projects</h1>
             </div>
             <div class="grid projects-gallery center-width full-width">
                 <a class="project" href="https://investinpuravida.com/" target="_blank">
                     <img class="project-img full-width" src="Images/Invest_In_Pura_Vida_Website.png" alt="Screenshot from Invest in Pura Vida Website">
-                    <h2 class="project-title text-center">Invest in Pura Vida Website</h2>
+                    <h2 class="project-title text-center" data-translation="project-1">Invest in Pura Vida Website</h2>
                 </a>
                 <a class="project" href="javascript:void(0);" onclick="displayDescription('project-description-2', 'project-2')">
                     <div id="project-2">
                         <img class="project-img full-width" src="Images/Invest_In_Pura_Vida_Logo.png" alt="Invest in Pura Vida Logo">
                     </div>
-                    <h2 class="project-title text-center">Invest in Pura Vida Logo</h2>
+                    <h2 class="project-title text-center" data-translation="project-2">Invest in Pura Vida Logo</h2>
                     <div id="project-description-2" class="hidden">
-                        <p class="project-description">A commissioned logo for Invest in Pura Vida</p>
+                        <p class="project-description" data-translation="project-2-description">A commissioned logo for Invest in Pura Vida</p>
                     </div>
                 </a>
             </div>
         </section>
         <section id="about" class="section-padding">
             <div class="center-width">
-                <h1 class="title">About Me</h1>
-                <h2>Name: Charles-Émile Lanthier</h2>
-                <p>Email: charlau.lanthier@gmail.com</p>
-                <h2>Work Experience</h2>
+                <h1 class="title" data-translation="about-me">About Me</h1>
+                <h2 data-translation="name">Name: Charles-Émile Lanthier</h2>
+                <p data-translation="email">Email: charlau.lanthier@gmail.com</p>
+                <h2 data-translation="work-exp">Work Experience</h2>
                 <h3>Innovate VA Corp</h3>
-                <p>Technical support and web developer, August 2023</p>
-                <p>Website development, website modifications.</p>
+                <p data-translation="work-exp-job-1">Technical support and web developer, August 2023</p>
+                <p data-translation="work-exp-description-1">Website development, website modifications, website automation, and podcast.</p>
                 <h3>Montfort Renaissance, Ottawa</h3>
-                <p>IT Apprentice, summer 2023</p>
-                <p>Fixing, configuring, and building computers with Windows 10/11. Perform IT inventory, Installing cables, install cable end caps, and manage a security system with fobs.</p>
+                <p data-translation="work-exp-job-2">IT Apprentice, summer 2023</p>
+                <p data-translation="work-exp-description-2">Fixing, configuring, and building computers with Windows 10/11. Perform IT inventory, Installing cables, install cable end caps, and manage a security system with fobs.</p>
                 <h3>Mouvement d'Implication Francophone d'Orléans (MIFO), Ottawa</h3>
-                <p>Apparitor, September 2022 to September 2023</p>
-                <p>Launch Zoom meetings for activities offered in hybrid mode, install cameras including adjusting angles, perform audio tests, help clients with connection to Zoom meetings and some other minor technical and audio-visual tasks.</p>
+                <p data-translation="work-exp-job-3">IT support/customer service, September 2022 to September 2023</p>
+                <p data-translation="work-exp-description-3">Launch Zoom meetings for activities offered in hybrid mode, install cameras including adjusting angles, perform audio tests, help clients with connection to Zoom meetings and some other minor technical and audio-visual tasks.</p>
                 <h3>Montfort Renaissance, Ottawa</h3>
-                <p>IT Apprentice, summer 2022</p>
-                <p>Fixing and configuring computers with Windows, perform IT inventory, Installing cables and install cable end caps.</p>
-                <h2>Education</h2>
+                <p data-translation="work-exp-job-4">IT Apprentice, summer 2022</p>
+                <p data-translation="work-exp-description-4">Fixing and configuring computers with Windows, perform IT inventory, Installing cables and install cable end caps.</p>
+                <h2 data-translation="education">Education</h2>
                 <p><span class="date">2022 - 2023</span> University of Ottawa, Software Engineering.</p>
                 <h2>Skills</h2>
                 <p>HTML/CSS, Python, Pixel Art, Unity, C#, Computer assembly and configuration.</p>
@@ -75,7 +84,7 @@
             </div>
             <div class="flex">
                 <div class="grid contact-grid contacts center-width full-width">
-                    <h2 class="grid-top">Find me on: </h2>
+                    <h2 class="grid-top" data-translation="find-me-on">Find Me On: </h2>
                     <p class="grid-top mobile-hide"></p>
                     <p class="grid-top mobile-hide"></p>
                     <a href="https://www.linkedin.com/in/charles-%C3%A9mile-lanthier-6749ba236/" target="_blank"><i class="fa fa-linkedin"></i><p class="inline">Charles-Émile Lanthier</p></a>
@@ -84,7 +93,7 @@
                     <a href="https://www.instagram.com/charlesemilelanthier/" target="_blank"><i class="fa fa-instagram"></i><p class="inline">charlesemilelanthier</p></a>
                 </div>
             </div>
-            <p class="center-width full-width credit">Made with code by Charles-Émile</p>
+            <p class="center-width full-width credit" data-translation="made-by">Made with code by Charles-Émile</p>
         </footer>
     </body>
 </html>
