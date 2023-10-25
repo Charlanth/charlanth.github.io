@@ -9,7 +9,7 @@
         <link rel="icon" href="Images/Portfolio_Icon.png">
         <link rel="stylesheet" type="text/css" href="styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <title>Portfolio</title>
+        <title>Charles Portfolio</title>
     </head>
     <body>
         <nav id="navbar" class="navbar">
@@ -22,23 +22,24 @@
                     <li ><a href="javascript:void(0);" class="language-option" onclick="changeLanguage('EN')">EN</a></li>
                 </ul>
             </div>
-            <div class="pc-hide nav-items no-decorations"> </div>
-            <a class="nav-items" href="#welcome" data-translation="welcome">Welcome</a>
-            <a class="nav-items" href="#projects" data-translation="projects">Projects</a>
-            <a class="nav-items" href="#about" data-translation="about">About</a>
-            <a class="nav-items"href="#contact" data-translation="contact">Contact</a>
-            <a href="javascript:void(0);" class="icon pc-hide no-decorations" onclick="displayMenu()"><i class="fa fa-bars"></i></a>
+            <div class="pc-hide navbar-filler"> </div>
+            <a class="nav-item decorations" href="#welcome" data-translation="welcome">Welcome</a>
+            <a class="nav-item decorations" href="#projects" data-translation="projects">Projects</a>
+            <a class="nav-item decorations" href="#about" data-translation="about">About</a>
+            <a class="nav-item decorations last-nav-item"href="#contact" data-translation="contact">Contact</a>
+            <a href="javascript:void(0);" class="icon pc-hide" onclick="displayMenu()"><i class="fa fa-bars fa-2x"></i></a>
         </nav>
         <section id="welcome" class="flex full-height">
             <div class="center-width full-width">
                 <h1 class="main-title" data-translation="main-title">Hi, my name is Charles-Émile Lanthier</h1>
+                <h2 data-translation="what-i-do">I design and develop Websites, pixel art for video games</h2>
             </div>
         </section>
         <section id="projects" class="section-padding">
             <div class="center-width">
                 <h1 class="title" data-translation="projects-title">Here are some of my projects</h1>
             </div>
-            <div class="grid projects-gallery center-width full-width">
+            <div class="grid projects-grid center-width full-width">
                 <a class="project" href="https://investinpuravida.com/" target="_blank">
                     <img class="project-img full-width" src="Images/Invest_In_Pura_Vida_Website.png" alt="Screenshot from Invest in Pura Vida Website">
                     <h2 class="project-title text-center" data-translation="project-1">Invest in Pura Vida Website</h2>
@@ -52,6 +53,19 @@
                         <p class="project-description" data-translation="project-2-description">A commissioned logo for Invest in Pura Vida</p>
                     </div>
                 </a>
+                <a class="project" href="pixel_art_portfolio.html">
+                    <img class="project-img full-width" src="Images/pixel_art/Cutlass.png" alt="">
+                    <h2 class="project-title text-center" data-translation="project-3">Pixel Art Portfolio</h2>
+                </a>
+                <a class="project" href="javascript:void(0);" onclick="displayDescription('project-description-4', 'project-4')">
+                    <div id="project-4">
+                        <img class="project-img full-width" src="Images/LD_Logo.png" alt="Lilith's Dream Icon">
+                    </div>
+                    <h2 class="project-title text-center" data-translation="project-4">Lilith's Dream</h2>
+                    <div id="project-description-4" class="hidden">
+                        <p class="project-description" data-translation="project-4-description">Lilith's Dream is an indie game currently in development. Lilith's Dream will be a top down dark fantasy RPG. More details will be revealed as the development progresses.</p>
+                    </div>
+                </a>
             </div>
         </section>
         <section id="about" class="section-padding">
@@ -62,7 +76,7 @@
                 <h2 data-translation="work-exp">Work Experience</h2>
                 <h3>Innovate VA Corp</h3>
                 <p data-translation="work-exp-job-1">Technical support and web developer, August 2023 to present</p>
-                <p data-translation="work-exp-description-1">Website development, website modifications, website automation, and podcast.</p>
+                <p data-translation="work-exp-description-1">Web development and modifications, tutorials, podcast creation, technical IT support including file conversion, and account creation.</p>
                 <h3>Montfort Renaissance, Ottawa</h3>
                 <p data-translation="work-exp-job-2">IT Apprentice, summer 2023</p>
                 <p data-translation="work-exp-description-2">Fixing, configuring, and building computers with Windows 10/11. Perform IT inventory, Installing cables, install cable end caps, and manage a security system with fobs.</p>
@@ -89,6 +103,7 @@
                     <p class="grid-top mobile-hide"></p>
                     <a href="https://www.linkedin.com/in/charles-%C3%A9mile-lanthier-6749ba236/" target="_blank"><i class="fa fa-linkedin"></i><p class="inline">Charles-Émile Lanthier</p></a>
                     <a href="https://github.com/Charlanth" target="_blank"><i class="fa fa-github"></i><p class="inline">github.com/Charlanth</p></a>
+                    <a href="https://codestats.net/users/Charly" target="_blank" data-translation="code-stats">Code::Stats Profile</a>
                     <a href="https://www.facebook.com/charlesemile.lanthier/?locale=fr_FR" target="_blank"><i class="fa fa-facebook"></i><p class="inline">Charles-Émile Lanthier</p></a>
                     <a href="https://www.instagram.com/charlesemilelanthier/" target="_blank"><i class="fa fa-instagram"></i><p class="inline">charlesemilelanthier</p></a>
                 </div>

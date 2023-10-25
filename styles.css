@@ -7,6 +7,11 @@
     --second-gray: #8aa1ad;
 }
 
+@font-face {
+    font-family: Pixelfont;
+    src: url(Fonts/pixelfont.ttf);
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -82,25 +87,38 @@ h2, h3 {
     background: var(--highlight-blue);
 }
 
-.nav-items {
-    padding: 1rem 1.5rem;
+.navbar-filler {
+    padding-bottom: 2.8rem; 
 }
 
-.nav-items:nth-of-type(4) {
+.nav-item {
+    padding: 0.8rem 1.5rem;
+}
+
+.last-nav-item {
     padding-right: 4rem;
 }
 
-.nav-items::before, .nav-items::after, .title::before, .title::after {
+.nav-item:hover, .icon:hover, .return-icon:hover {
+    background-color: var(--highlight-blue);
+}
+
+.decorations::before, .decorations::after, .title::before, .title::after {
     color: var(--second-gray);
     content: '< ';
 }
 
-.nav-items::after, .title::after {
+.decorations::after, .title::after {
     content: ' />';
 }
 
-.nav-items:hover, .icon:hover {
-    background-color: var(--highlight-blue);
+.return-icon {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 0.4rem;
+    padding-right: 1.5rem;
+    width: 1%;
 }
 
 .section-padding {
@@ -131,7 +149,7 @@ h2, h3 {
     padding-bottom: 1rem;
 }
 
-.projects-gallery, .contact-grid {
+.projects-grid, .contact-grid {
     grid-template-columns: 33% 33% 33%;
     gap: 4rem;
 }
@@ -139,6 +157,20 @@ h2, h3 {
 .contact-grid {
     padding: 3rem 0;
     gap: 0;
+}
+
+.pixel-art-grid {
+    grid-template-columns: repeat(5, 20%);
+    padding: 0;
+    gap: 1rem;
+}
+
+.pixel-art-title {
+    padding-bottom: 1rem;
+}
+
+.pixel-font {
+    font-family: Pixelfont, sans-serif;
 }
 
 .center-width {
@@ -232,23 +264,15 @@ h2, h3 {
         display: block;
     }
 
-    .no-decorations {
-        padding-bottom: 2.2rem;
-    }
-
-    .no-decorations::before, .no-decorations::after {
-        content: none;
-    }
-
-    .nav-items:nth-of-type(4) {
-        padding-right: 1.5rem;
+    .last-nav-item {
+        padding-right: 0;
     }
 
     .navbar a.icon {
         position: fixed;
         top: 0;
         right: 0;
-        padding: 1rem;
+        padding: 0.4rem 0.6rem;
         width: 5%;
     }
 

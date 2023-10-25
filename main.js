@@ -28,7 +28,7 @@ function showLanguageOptions() {
   }
 }
 
-var translations = {}; //Store translations
+var translations = {}; //Stores translations
 var currentLanguage = "EN"; //Default Language
 
 function changeLanguage(newLanguage) {
@@ -66,7 +66,7 @@ function updatePageContent(language) {
   });
 }
 
-// Default translation
+// Opens default translation language on load
 loadTranslations(currentLanguage).then(function () {
   updatePageContent(currentLanguage);
 });
