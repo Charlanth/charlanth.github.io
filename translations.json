@@ -36,6 +36,8 @@
         "made-by": "Créé avec du code par Charles-Émile",
         "pixel-art-title": "Voici quelques-uns de mes pixel arts",
         "pixel-art-grid-title-1": "Pixel art pour le jeu: Le songe de Lilith",
+        "pixel-art-grid-subtitle-1": "Armes",
+        "pixel-art-grid-subtitle-2": "Armures",
         "pixel-art-1": "Grande épée de croisé",
         "pixel-art-2": "Coutelas",
         "pixel-art-3": "Halebarde royale",
@@ -45,7 +47,17 @@
         "pixel-art-7": "Épée à Yor",
         "pixel-art-8": "Rapière royale",
         "pixel-art-9": "Faux de Lilith",
-        "pixel=art-10": "Flamberge de flame sanctifiée"
+        "pixel-art-10": "Flamberge de flame sanctifiée",
+        "pixel-art-11": "Casque fermé",
+        "pixel-art-12": "Casque à bec de grenouille",
+        "pixel-art-13": "Barbute à visière",
+        "pixel-art-14": "Casque à bord long",
+        "pixel-art-15": "Grand heaume d'Adelard",
+        "pixel-art-16": "Cuirasse d'acier",
+        "pixel-art-17": "Grand heaume",
+        "pixel-art-18": "Chausses de mailles",
+        "pixel-art-19": "Haubert",
+        "pixel-art-20": "Cuirasse d'Adelard"
       },
       "EN": {
         "welcome": "Welcome",
@@ -84,6 +96,8 @@
         "made-by": "Made with code by Charles-Émile",
         "pixel-art-title": "Here are some of my pixel arts",
         "pixel-art-grid-title-1": "Pixel art for the game: Lilith's Dream",
+        "pixel-art-grid-subtitle-1": "Weapons",
+        "pixel-art-grid-subtitle-2": "Armours",
         "pixel-art-1": "Crusader Greatsword",
         "pixel-art-2": "Cutlass",
         "pixel-art-3": "Royal Halberd",
@@ -93,6 +107,16 @@
         "pixel-art-7": "Yor's Sword",
         "pixel-art-8": "Royal Rapier",
         "pixel-art-9": "Lilith's Scythe",
-        "pixel-art-10": "Holy Flame Flamberge"
+        "pixel-art-10": "Holy Flame Flamberge",
+        "pixel-art-11": "Close Helm",
+        "pixel-art-12": "Frog Mouth Helm",
+        "pixel-art-13": "Visored Barbute",
+        "pixel-art-14": "Kettle Helm",
+        "pixel-art-15": "Adelard's Greathelm",
+        "pixel-art-16": "Steel Cuirass",
+        "pixel-art-17": "Greathelm",
+        "pixel-art-18": "Mail Chausses",
+        "pixel-art-19": "Hauberk",
+        "pixel-art-20": "Adelard's Cuirass"
       }
 }
