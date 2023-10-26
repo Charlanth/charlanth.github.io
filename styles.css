@@ -256,7 +256,7 @@ h2, h3 {
 
 @media screen and (max-width: 600px){
 
-    .navbar a:not(.language-option), .mobile-hide{
+    .nav-item, .mobile-hide{
         display: none;
     }
 

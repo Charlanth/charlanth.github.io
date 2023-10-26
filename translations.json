@@ -6,7 +6,7 @@
         "other": "Autre",
         "contact": "Contact",
         "main-title": "Bonjour, je m'appelle Charles-Émile Lanthier",
-        "what-i-do": "Je créer et développe des sites webs, du pixel art pour des jeux vidéo",
+        "what-i-do": "Je créer et développe des sites webs, du pixel art et des jeux vidéo",
         "projects-title": "Voici quelques-uns de mes projets",
         "project-1": "Site web d'Invest in Pura Vida",
         "project-2": "Logo d'Invest in Pura Vida",
@@ -43,7 +43,9 @@
         "pixel-art-5": "Fusil à rail à Rosalind",
         "pixel-art-6": "Zweihänder",
         "pixel-art-7": "Épée à Yor",
-        "pixel-art-8": "Rapière royale"
+        "pixel-art-8": "Rapière royale",
+        "pixel-art-9": "Faux de Lilith",
+        "pixel=art-10": "Flamberge de flame sanctifiée"
       },
       "EN": {
         "welcome": "Welcome",
@@ -52,7 +54,7 @@
         "other": "Other",
         "contact": "Contact",
         "main-title": "Hi, my name is Charles-Émile Lanthier",
-        "what-i-do": "I design and develop Websites, pixel art for video games",
+        "what-i-do": "I design and develop Websites, pixel art, and video games",
         "projects-title": "Here are some of my projects",
         "project-1": "Invest in Pura Vida Website",
         "project-2": "Invest in Pura Vida Logo",
@@ -89,6 +91,8 @@
         "pixel-art-5": "Rosalind's Railgun",
         "pixel-art-6": "Zweihänder",
         "pixel-art-7": "Yor's Sword",
-        "pixel-art-8": "Royal Rapier"
+        "pixel-art-8": "Royal Rapier",
+        "pixel-art-9": "Lilith's Scythe",
+        "pixel-art-10": "Holy Flame Flamberge"
       }
 }
