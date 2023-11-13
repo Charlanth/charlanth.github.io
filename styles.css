@@ -9,7 +9,27 @@
 
 @font-face {
     font-family: Pixelfont;
-    src: url(Fonts/pixelfont.ttf);
+    src: url('Fonts/Liliths_Dream-Regular.ttf');
+}
+
+.pixel-art-title-main {
+    font-size: 60px;
+}
+
+.pixel-art-title {
+    padding-bottom: 1rem;
+    font-size: 30px;
+}
+
+.pixel-art-subtitle {
+    font-size: 40px;
+}
+
+/*font-size: 20px;*/
+
+.pixel-font {
+    font-family: Pixelfont, sans-serif;
+    image-rendering: pixelated;
 }
 
 * {
@@ -75,14 +95,14 @@ h2, h3 {
     background: var(--main-blue);
     list-style: none;
 }
-  
+
 .language-option {
     padding: 14px;
     display: block;
     color: white;
     transition: background 0.2s;
 }
-  
+
 .language-option:hover {
     background: var(--highlight-blue);
 }
@@ -163,14 +183,6 @@ h2, h3 {
     grid-template-columns: repeat(5, 20%);
     padding: 0;
     gap: 1rem;
-}
-
-.pixel-art-title {
-    padding-bottom: 1rem;
-}
-
-.pixel-font {
-    font-family: Pixelfont, sans-serif;
 }
 
 .center-width {
